@@ -17,4 +17,14 @@ int main(){
     f1 = f1.operator=(f2.operator=(f3));
     f1.print();
 
+    std::cout<<f1.operator==(f2);
+    std::cout<<f1.operator<(f2);
+    std::cout<<f1.operator>(f2);
+    f1++;
+    f1.print();
+    ++f1;
+    f1.print();
+    operator<<(std::cout,f1);
+    operator>>(std::cin,f1);
+    f1.print();
 }
