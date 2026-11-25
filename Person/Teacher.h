@@ -1,0 +1,13 @@
+#ifndef TEACHER
+#define TEACHER
+#include"Person.h"
+#include<string>
+class Teacher:public Person{
+    std::string phone{};
+    public:
+    virtual void print();
+    virtual void setage(int);
+    virtual void setaddress(const std::string&);
+    virtual void setname(const std::string&);
+};
+#endif
